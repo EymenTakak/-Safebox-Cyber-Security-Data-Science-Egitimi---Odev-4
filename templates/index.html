@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AISCELAB</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <table>
+  <caption>AISCELAB ODEV</caption>
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Job</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for row in data %}
+    <tr>
+            <td>{{ row['ID'] }}</td>
+            <td>{{ row['Name'] }}</td>
+            <td>{{ row['Age'] }}</td>
+            <td>{{ row['Job'] }}</td>
+            <td>{{ row['Description'] }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>
