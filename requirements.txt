@@ -1,0 +1,5 @@
+Columnar==1.4.1
+Faker==18.10.1
+Flask==2.3.2
+pandas==2.0.2
+pymongo==4.3.3
